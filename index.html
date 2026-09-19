@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="技换 SkillSwap —— 用你的技能，换一个新世界。发布你能教的与想学的，智能双向匹配，达成技能交换。" />
+  <title>技换 SkillSwap · 用你的技能，换一个新世界</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⇄</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 顶部玻璃拟态导航 -->
+  <header class="nav glass">
+    <a class="nav-logo" href="#/home" aria-label="技换首页">
+      <span class="logo-mark">⇄</span>
+      <span class="logo-text">技换<em>SkillSwap</em></span>
+    </a>
+    <nav class="nav-tabs" id="navTabs" aria-label="主导航">
+      <a href="#/home"    data-route="home">首页</a>
+      <a href="#/plaza"   data-route="plaza">技能广场</a>
+      <a href="#/publish" data-route="publish">发布技能</a>
+      <a href="#/match"   data-route="match">智能匹配</a>
+      <a href="#/me"      data-route="me">我的<span class="nav-badge" id="navBadge" hidden></span></a>
+      <span class="nav-ink" id="navInk"></span>
+    </nav>
+  </header>
+
+  <!-- 视图容器 -->
+  <main id="app">
+    <section class="view" id="view-home"    aria-label="首页"></section>
+    <section class="view" id="view-plaza"   aria-label="技能广场" hidden></section>
+    <section class="view" id="view-publish" aria-label="发布技能" hidden></section>
+    <section class="view" id="view-match"   aria-label="智能匹配" hidden></section>
+    <section class="view" id="view-me"      aria-label="个人中心" hidden></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>技换 SkillSwap · 让每份技能都被需要 ⇄ 美团 AI Coding 笔试作品</p>
+  </footer>
+
+  <!-- 底部 Tab 栏（移动端） -->
+  <nav class="bottom-tabs" id="bottomTabs" aria-label="移动端导航">
+    <a href="#/home"    data-route="home"><i>⌂</i>首页</a>
+    <a href="#/plaza"   data-route="plaza"><i>▦</i>广场</a>
+    <a href="#/publish" data-route="publish" class="fab"><i>＋</i></a>
+    <a href="#/match"   data-route="match"><i>⇄</i>匹配</a>
+    <a href="#/me"      data-route="me"><i>☺</i>我的<span class="nav-badge dot" id="navBadgeM" hidden></span></a>
+  </nav>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+  <div id="confetti-root" aria-hidden="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
