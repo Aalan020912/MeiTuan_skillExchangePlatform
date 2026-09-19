@@ -1,5 +1,5 @@
 # 技换 SkillSwap ⇄
-产品Demo：https://github.com/Aalan020912/MeiTuan_skillExchangePlatform.git
+产品Demo： https://aalan020912.github.io/MeiTuan_skillExchangePlatform/ 
 > 用你的技能，换一个新世界。
 
 「技换 SkillSwap」是一个技能互换社区平台 demo：发布「我能教的」与「我想学的」，由双向智能匹配算法为你找到正好互补的交换伙伴，并通过交换契约、信用分、徽章与互评机制保障交换质量。
